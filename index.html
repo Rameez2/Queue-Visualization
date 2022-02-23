@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>Queue Visualization</h1>
+<div class="controllers">
+
+    <button class="addBtn" onclick="AddRecord()">Add</button>
+    <input type="text" placeholder="Input..." id="item-input" />
+    <button class="removeBtn" onclick="RemoveRecord(this)">Remove</button>
+
+</div>
+<h1>Queue</h1>
+<div class="queue-container">
+</div>
+<h1 style="border: 2px solid orange;
+width: fit-content;
+border-radius: 20px;
+padding: 10px;
+margin-top: 40px;">FIRST IN FIRST OUT</h1>
+
+</body>
+<script src="index.js"></script>
+</html>

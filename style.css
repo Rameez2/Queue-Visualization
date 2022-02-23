@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: yellow;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+}
+
+.controllers{
+    width: auto;
+    height: 150px;
+    border: 8px solid teal;
+    border-radius: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.controllers > button {
+    width: 210px;
+    height: 100px;
+    align-self: center;
+    border-radius: 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    background-color: white;
+    cursor: pointer;
+}
+.controllers > input {
+    width: 300px;
+    height: 50px;
+    align-self: center;
+    border: 2px solid green;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 2px;
+    font-family: monospace;
+}
+
+.removeBtn {
+    border: 5px solid red;
+    border-radius: 20px;
+    color: red;
+} 
+.removeBtn:hover {
+  animation: hoverRemoveBtn 0.3s linear forwards;
+
+}
+
+.addBtn {
+    border: 5px solid rgb(46, 126, 255);
+    border-radius: 20px;
+    color: rgb(46, 126, 255);
+}
+.addBtn:hover {
+  animation: hoverAddBtn 0.3s linear forwards;
+}
+
+.queue-container {
+    width: auto;
+    height: 200px;
+    border: 20px solid black;
+    border-left-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    border-right-style: none;
+    display: flex;
+    margin: 0 60px 0 60px;
+}
+
+.queue-item{
+    width: fit-content;
+    max-width: 120px;
+    font-family: monospace;
+    border: 4px solid blue;
+    border-radius: 20px;
+    margin: 0px 15px 0 15px;
+    padding: 10px;
+    font-size: 20px;
+    align-self: center;
+}
+
+/* ADMINATIONS */
+
+@keyframes hoverAddBtn {
+    0%{}
+    100%{
+        border-radius: 20px;
+        color: white;
+        background-color: rgb(46, 126, 255);
+    }
+}
+@keyframes hoverRemoveBtn {
+    0%{}
+    100%{
+        border-radius: 20px;
+        color: white;
+        background-color: red;
+    }
+}
